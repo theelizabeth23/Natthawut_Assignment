@@ -62,20 +62,13 @@ import Link from 'next/link'
   return (
     <Layout>
     <Head>
-        <title>First Page</title>
+        <title>Home Page</title>
     </Head>
     <div className={styles.container}>
         <Navbar />
         <br></br>
-    </div>
-    <style jsx>{`
-                h1,h2,ul{
-                    font-family: 'Itim', cursive;
-                }
-                
-            `}</style>
-    <div>
-    
+        <h1 class="text-3xl font-bold underline">Hello world!</h1>
+        <link href="/dist/output.css" rel="stylesheet"></link>
     </div>
 </Layout>
   )
