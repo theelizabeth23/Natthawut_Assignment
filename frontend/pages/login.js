@@ -1,15 +1,12 @@
-import Head from 'next/head' 
-import Layout from '../components/layout' 
+import Head from 'next/head'
+import Layout from '../components/layout'
+import { useState } from 'react'
 import Navbar from '../components/navbar'
 import styles from '../styles/Home.module.css'
-
-import { useState } from 'react'
 import axios from 'axios'
 import config from '../config/config'
-import Link from 'next/link'
 
- // export default function Home({ token }) {
-  export default function Login({ token }) {
+export default function Login({ token }) {
 
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
@@ -58,31 +55,33 @@ import Link from 'next/link'
     const copyText = () => {
         navigator.clipboard.writeText(token)
     }
- 
-  return (
-    <Layout>
-    <Head>
-        <title>First Page</title>
-    </Head>
-    <div className={styles.container}>
-        <Navbar />
-        <br></br>
-    </div>
-    <style jsx>{`
-                h1,h2,ul{
-                    font-family: 'Itim', cursive;
-                }
+
+    return (
+        <Layout>
+            <Head>
+                <title>Login</title>
+            </Head>
+            <div className={styles.container}>
+                <Navbar />
+                <h1>Login</h1>
                 
-            `}</style>
-    <div>
-    
-    </div>
-</Layout>
-  )
+                
+                <br/>
+                <div>
+                    Status:  {status}
+                </div>
+                <br />
+                {loginForm()}
+                <div>
+                    <button onClick={login}>Login</button>
+                </div>
+            </div>
+        </Layout>
+        
+
+    )
 }
 
 export function getServerSideProps({ req, res }) {
-  // console.log("token from cookie: ",cookie.get("token")) 
-  // console.log('req: ', req.headers)
-  return { props: { token: req.cookies.token || "" } };
+    return { props: { token: req.cookies.token || "" } };
 }
