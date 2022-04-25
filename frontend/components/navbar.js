@@ -15,7 +15,10 @@ const Navbar = () => (
                <Link href="/"><a class="nav-link active"> หน้าหลัก </a></Link> 
             </li>
             <li class="nav-item">
-               <Link href="/detail"><a class="nav-link active"> รีวิวหนัง </a></Link> 
+               <Link href="/detail"><a class="nav-link active"> หนังใหม่ </a></Link> 
+            </li>
+            <li class="nav-item">
+               <Link href="/admin"><a class="nav-link active"> รีวิวหนัง </a></Link> 
             </li>
             <li class="nav-item">
                <Link href="/login"><a class="nav-link active"> Login </a></Link>
