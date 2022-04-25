@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import styles from '../styles/menu.module.css'
 const Navbar = () => (
-
-    
     <div >
 
 <meta charset="utf-8"></meta>
@@ -13,14 +11,17 @@ const Navbar = () => (
     <div class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark ">
   <div class="container-fluid" >
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <Link href="/register"><a class="nav-link active"> ลงทะเบียน </a></Link>  
-            </li>
-            <li class="nav-item">
-               <Link href="/login"><a class="nav-link active"> เข้าสู่ระบบ </a></Link>
-            </li>
-            <li class="nav-item">
+        <li class="nav-item">
                <Link href="/"><a class="nav-link active"> หน้าหลัก </a></Link> 
+            </li>
+            <li class="nav-item">
+               <Link href="/detail"><a class="nav-link active"> รีวิวหนัง </a></Link> 
+            </li>
+            <li class="nav-item">
+               <Link href="/login"><a class="nav-link active"> Login </a></Link>
+            </li>
+            <li class="nav-item">
+                <Link href="/register"><a class="nav-link active"> Register </a></Link>  
             </li>
             <li class="nav-item">
                <Link href="/logout"><a class="nav-link active"> Logout </a></Link> 

@@ -2,8 +2,8 @@ const bcrypt = require('bcrypt')
 
 let users = {
     users: [
-        { id: 1, username: 'Natthawut', password: '1234', email: 'natthawut.not31@gmail.com' },
-        { id: 2, username: 'Admin', password: '1234', email: 'Admin@gmail.com' },
+        { id: 1, username: 'warodom', password: '$2b$10$0AsMSQaUB0AlLnKzgeUOfOE.hWUodtuR4NOU954XLVy2gy3lBWsdO', email: 'wwarodom@gmail.com' },
+        { id: 2, username: 'john', password: '$2b$10$1Bu4tImM/Ms9rtU.8/n/COWpzUAGFB6YlsO5xZqFih1JUxafyFFXa', email: 'john@gmail.com' },
     ]
 }
 

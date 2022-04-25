@@ -67,8 +67,24 @@ import Link from 'next/link'
     <div className={styles.container}>
         <Navbar />
         <br></br>
-        <h1 class="text-3xl font-bold underline">Hello world!</h1>
-        <link href="/dist/output.css" rel="stylesheet"></link>
+
+        <h1>Movie Review</h1>
+        <h1>welcome</h1>
+        <link rel="preconnect" href="https://fonts.gstatic.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"></link>
+
+
+        <img  src="https://s.isanook.com/mv/0/rp/r/w728/ya0xa0m1w0/aHR0cHM6Ly9zLmlzYW5vb2suY29tL212LzAvdWQvMjQvMTIyOTczL2hlYWQuanBn.jpg" alt="fantastic beasts" ></img>
+
+    </div>
+    <style jsx>{`
+                h1,h2,ul{
+                    font-family: 'Itim', cursive;
+                }
+                
+            `}</style>
+    <div>
+    
     </div>
 </Layout>
   )
